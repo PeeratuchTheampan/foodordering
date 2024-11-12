@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <ul class="logo-item">
+                        <li><img src="/imgs/White Black Minimalist Illustration Kitchen and Restaurant Food Catering Logo.png" alt="Logo"></li>
+                        <li><a href="/">Food Ordering</a></li>
+                    </ul>
+                </div>
+                <ul class="menu">
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="#" id="cartIcon" onclick="showCartItems()"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Us Content -->
+    <section class="contact">
+        <div class="container">
+            <h2 style="color: orange; text-align: center; margin-top: 2rem;">Contact Us</h2>
+            <p style="text-align: center; margin-top: 1rem;">We’d love to hear from you! Feel free to reach out with any questions or feedback.</p>
+            <div class="contact-form" style="max-width: 500px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <form action="/send-message" method="POST">
+                    <label for="name" style="color: orange;">Name:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">
+                    
+                    <label for="email" style="color: orange;">Email:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">
+                    
+                    <label for="message" style="color: orange;">Message:</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem; margin-top: 0.5rem; margin-bottom: 1rem;"></textarea>
+                    
+                    <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
